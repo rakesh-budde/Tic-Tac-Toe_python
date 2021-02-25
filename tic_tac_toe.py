@@ -181,7 +181,7 @@ while True:
     else:
         #get O input
         o_choice = int(input("\nO : Please choose 1 - 9. > "))
-        while (x_choice <1 and x_choice>9) or board.cells[x_choice] != " ":
+        while (o_choice < 1) or (o_choice > 9) or (board.cells[o_choice] != " "):
             print("\n You entered wrong input\n")
             x_choice = int(input("\nX : Please choose 1 - 9. > "))
         
